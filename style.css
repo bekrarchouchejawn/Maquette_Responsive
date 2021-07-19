@@ -1,0 +1,1186 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: Arial;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header
+{
+	background-color: #C5FFFF;
+	width: 100%;
+	height: 4em;
+}
+
+#logo
+{
+	float: left;
+	margin-left: 29em;
+	margin-top: 1.25em;
+}
+
+#logo2
+{
+	margin-top: 1.25em;
+	float: left;
+	margin-left: 0.7em;
+}
+
+nav
+{
+	background-color: #A77CFF;
+	width: 100%;
+	height: 9em;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+nav img
+{
+	margin-top: 0.7em;
+	float: left;
+	margin-left: 31.1em;
+	width: 20em;
+	height: 6.5em;
+}
+
+#divimg
+{
+	float: left;
+}
+
+#menu
+{
+    width: 100%;
+    margin-top: 4.5em;
+    font-weight: bold;
+}
+
+#menu li
+{
+    float: left;
+    position: relative;
+}
+
+#menu a
+{
+    float: left;
+    height: 3em;
+    padding: 0 0.7em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #363636;
+    font-size: 0.8em;
+}
+
+#menu li:hover > ul
+{
+    display: block;
+}
+
+#menu ul
+{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 1.5em;
+    z-index: 99999;
+    background: #CBCBCB;
+    margin-left: 0.7em;
+}
+
+#menu ul li
+{
+    float: none;
+    padding: 0;
+    display: block;
+}
+
+#menu ul a
+{
+    padding: 0.7em 2em 0.7em 2em;
+    height: auto;
+    display: block;
+    float: none;
+    text-transform: none;
+    border-bottom: 1px solid black;
+}
+
+#menu ul a:hover
+{
+    background: white;
+    color: red;
+}
+
+#navmenu
+{
+	float: left;
+	margin-left: 9em;
+}
+
+#cntslide
+{
+	width: 100%;
+	background-color: #C5FFFF;
+	padding: 2em 0 0 0em; 
+	border-bottom: 1px solid black;
+}
+
+#slider
+{
+	width:50%;
+	height: 27em;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#image img
+{
+	width:100%;
+}
+
+.slide
+{
+	position: absolute;
+	top:0;
+	left: 0;
+	width:100%;
+}
+
+.nav
+{
+	position: absolute;
+	bottom: 1em;
+	width: 300px;
+	height: 50px;
+	right: 27%;
+}
+
+.nav span
+{
+	display: inline-block;
+	background-image: url(img/1.png);
+	background-position: 10% 1%;
+	margin: 2px;
+	width: 30px;
+	background-repeat: no-repeat;
+	height: 20px;
+}
+
+.nav span:hover
+{
+	background-position: 10% 45%;
+	margin: 2px;
+	cursor: pointer;
+}
+
+.nav span.active
+{
+	background-position: 10% 90%;
+	margin: 2px;
+}
+
+#next,#prev
+{
+	width: 50px;
+	height: 280px;
+	position: relative;
+	z-index: 999;
+	color: white;
+	font-size: 30px;
+	background-repeat: no-repeat;
+}
+
+#next
+{
+	float: right;
+	margin-right: 0.3em;
+	margin-top: 5.5em;
+	height: 45px;
+	width: 45px;
+	background-image: url(img/2.png);
+	background-position: 100% 10%;
+}
+
+#prev
+{
+	float: left;
+	margin-left: 0.3em;
+	margin-top: 5.5em;
+	height: 45px;
+	width: 45px;
+	background-image: url(img/2.png);
+}
+
+#next:hover,#prev:hover
+{
+	cursor: pointer;
+}
+
+#desimg
+{
+  padding-top: 1.3em;
+  padding-left: 1em; 
+  bottom: 4.7em;
+  height: 2.3em;
+  color: white;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  z-index: 999;
+}
+
+#contenus
+{
+	width: 100%;
+	height: 48em;
+	float: left;
+	border-bottom: 1px solid black;
+}
+
+#textes
+{
+	width: 51%;
+	height: 22em;
+	float: left;
+	margin-left: 29em;
+	margin-top: 3em;
+}
+
+#premier
+{
+	width: 32%;
+	height: 20em;
+	float: left;
+}
+
+#premier div img
+{
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+#premier div p
+{
+	color: white;
+	margin-left: 5.5em;
+	margin-top: -100px;
+	float: left;
+}
+
+#deuxieme div p
+{
+	color: white;
+	margin-left: 120px;
+	margin-top: -100px;
+}
+
+.taille
+{
+	width: 100%;
+	height: 8.5em;
+	background-color: #A67CFF;
+}
+
+#deuxieme
+{
+	width: 32%;
+	height: 20em;
+	float: left;
+	margin-left: 1em;
+	float: left;
+}
+
+#deuxieme div img
+{
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+#troisieme
+{
+	width: 32%;
+	height: 20em;
+	float: left;
+	margin-left: 1em;
+}
+
+#troisieme div img
+{
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+#troisieme div p
+{
+	color: white;
+	margin-left: 120px;
+	margin-top: -100px;
+	float: left;
+}
+
+.pos
+{
+	margin-top: 1em;
+	line-height: 22px;
+	font-size: 0.9em;
+}
+
+.nostyle
+{
+	text-decoration: none;
+	color: red;
+}
+
+#destination
+{
+	float: left;
+	width: 51%;
+	height: 20em;
+	margin-left: 29em;
+}
+
+#flags
+{
+	width: 100%;
+	height: 13em;
+	margin-top: 2em;
+}
+
+#france
+{
+	height: 9.5em;
+	width: 31%;
+	border: 1px solid black;
+	margin-left: 1em;
+	float: left;
+}
+
+#france img
+{
+	margin-top: 0.4em;
+	margin-left: 0.4em;
+}
+
+#brazil
+{
+	height: 9.5em;
+	width: 31%;
+	border: 1px solid black;
+	margin-left: 1em;
+	float: left;
+}
+
+#brazil img
+{
+	margin-top: 0.4em;
+	margin-left: 0.4em;
+}
+
+#algeria
+{
+	height: 9.5em;
+	width: 31%;
+	border: 1px solid black;
+	margin-left: 1em;
+	float: left;
+}
+
+#algeria img
+{
+	margin-top: 0.4em;
+	margin-left: 0.4em;
+}
+
+#flags p
+{
+	font-weight: bold;
+	margin-top: 1em;
+	font-size: 1.3em;
+}
+
+#demifooter
+{
+	width: 100%;
+	background-color: #C5FFFF;
+	float: left;
+}
+
+#demifooter h2
+{
+	font-size: 1.5em;
+}
+
+#demifooter p
+{
+	font-size: 0.9em;
+}
+
+#para
+{
+	width: 51%;
+	height: 30em;
+	margin-left: 29em;
+}
+
+#gauche
+{
+	width: 49%;
+	height: 25em;
+	float: left;
+	margin-top: 2em;
+}
+
+#droite
+{
+	width: 49%;
+	height: 25em;
+	float: right;
+	margin-top: 2em;
+}
+
+.paragraph
+{
+	margin-bottom: 1em;
+	float: left;
+}
+
+.image
+{
+	float: left;
+}
+
+.lorem
+{
+	float: right;
+	width: 75%;
+	margin-top: 0.8em;
+}
+
+#clear
+{
+	float: left;
+	width: 100%;
+	height: 10em;
+}
+
+#demifooter button
+{
+	background-color: #73B568;
+	height: 3em;
+	width: 8em;
+	border-radius: 5px;
+	border: 1px solid black;
+	color: white;
+	margin-top: 1em;
+}
+
+#footer
+{
+	width: 100%;
+	height: 7em;
+	background-color: #A67CFF;
+	clear: both;
+	border-top: 1px solid black;
+}
+
+#footer p
+{
+	float: left;
+}
+
+#footer a
+{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.classa
+{
+	margin-left: 2em;
+}
+
+#footermenu
+{
+	margin-left: 29em;
+	margin-top: 2em;
+	float: left;
+}
+
+#last
+{
+	display: inline-block;
+	margin-left: 42em;
+	margin-top: 2em;
+	color: grey;
+	font-size: 0.7em;
+	float: left;
+	clear: both;
+}
+
+hr
+{
+	border-top: 1px solid #D8D8D8;
+}
+
+/* telephone */
+@media(max-width: 767px) and (orientation : portrait)
+{
+	#logo
+	{
+		margin-left: 0.1em;
+	}
+
+	#menu
+	{
+	    margin-top: 1em;
+	}
+
+	.positionA
+	{
+		margin-top: 1em;
+	}
+
+	#menu ul a
+	{
+		padding: 0.7em 20em 0.7em 2em;
+	}
+
+	#menu li
+	{
+		width: 100%;
+		border-top: 1px white solid;
+		height: 2em;
+	}
+
+	nav img
+	{
+		margin-left: 0%;
+	}
+
+	nav
+	{
+		height: 22em;
+	}
+
+	#navmenu
+	{
+		margin-left: 0em;
+	}
+
+	#slider
+	{
+		width: 100%;
+		height: 12em;
+	}
+
+	#desimg
+	{
+		display: none;
+	}
+
+	#cntslide
+	{
+		height: 12em;
+	}
+
+	#next
+	{
+		margin-top: 1em;
+	}
+
+	#prev
+	{
+		margin-top: 1em;
+	}
+
+	.nav
+	{
+		top: 10em;
+		left: 10%;
+		position: relative;
+	}
+
+	#textes
+	{
+		margin-left: 0em;
+		width: 100%;
+	}
+
+	#contenus
+	{
+		height: 80em;
+	}
+
+	#brazil
+	{
+		display: none;
+	}
+
+	#algeria
+	{
+		display: none;
+	}
+
+	#france
+	{
+		width: 94%;
+		height: 15em;
+		margin-left: 0.6em;
+	}
+
+
+	#flags p
+	{
+		margin-top: 1em;
+	}
+
+	#premier
+	{
+		float: left;
+		width: 100%;
+		height: 18em;
+	}
+
+	#deuxieme
+	{
+		float: left;
+		width: 100%;
+		height: 18em;
+		margin-left: 0px;
+	}
+
+	#troisieme
+	{
+		float: left;
+		width: 100%;
+		height: 18em;
+		margin-left: 0px;
+	}
+
+	.pos
+	{
+		margin-top: 0em;
+	}
+
+	#premier div p
+	{
+		margin-top: 1em;
+		margin-left: 0px;
+		float: right;
+		margin-right: 3px;
+	}
+
+	#premier div img
+	{
+		float: left;
+		margin-left: 0px;
+	}
+
+	#troisieme div img
+	{
+		float: left;
+		margin-left: 0px;
+	}
+
+	#troisieme div p
+	{
+		margin-top: 1em;
+		margin-right: 10px;
+		margin-left: 0px;
+		float: right;
+	}
+
+	#destination
+	{
+		margin-left: 0em;
+		float: left;
+		width: 100%;
+		margin-top: 520px;
+	}
+
+	#france img
+	{
+		margin-top: 0.4em;
+		margin-left: 0.4em;
+		width: 96%;
+		height: 230px;
+	}
+
+	#para
+	{
+		margin-left: 0em;
+		width: 100%;
+		height: 50em;
+	}
+
+	#gauche
+	{
+		width: 100%;
+	}
+
+	#gauche > p
+	{
+		margin-bottom: 1em;
+	}
+
+	#droite
+	{
+		width: 100%;
+	}
+
+	#demifooter p
+	{
+		font-size: 1em;
+		line-height: 20px;
+		float: right;
+	}
+
+	.image img
+	{
+		float: left;
+	}
+
+	.lorem
+	{
+		width: 60%;
+		margin-top: 0.4em;
+		margin-left: 0em;
+	}
+
+	#clear
+	{
+		height: 15em;
+		float: left;
+		margin-top: 70px;
+	}
+
+	#footermenu
+	{
+		margin-left: 1em;
+	}
+
+	#footermenu p
+	{
+		padding-right: 3em;
+		float: left;
+	}
+
+	.classa
+	{
+		margin-left: 0px;
+	}
+
+	#last
+	{
+		margin-left: 0em;
+	}
+
+	#footer
+	{
+		height: 8em;
+	}
+}
+
+/* tablette portrait ipad*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+{
+	#logo
+	{
+		margin-left: 5em;
+	}
+
+	#menu
+	{
+	    margin-top: 8em;
+	}
+
+	.positionA
+	{
+		margin-top: 1em;
+	}
+
+	#menu ul a
+	{
+		padding: 0.7em 27em 0.7em 2em;
+	}
+
+	#menu li
+	{
+		width: 100%;
+		border-top: 1px black solid;
+		height: 2em;
+	}
+
+	nav img
+	{
+		margin-left: 14em;
+	}
+
+	nav
+	{
+		height: 22em;
+	}
+
+	#navmenu
+	{
+		margin-left: -23.5em;
+	}
+
+	#slider
+	{
+		width: 82%;
+		height: 20em;
+	}
+
+	#desimg
+	{
+		display: none;
+	}
+
+	#cntslide
+	{
+		height: 20em;
+	}
+
+	#next
+	{
+		margin-top: 3.5em;
+	}
+
+	#prev
+	{
+		margin-top: 3.5em;
+	}
+
+	.nav
+	{
+		top: 17em;
+		left: 28%;
+		position: relative;
+	}
+
+	#textes
+	{
+		margin-left: 5em;
+		width: 83.5%;
+	}
+
+	#contenus
+	{
+		height: 75em;
+	}
+
+	#brazil
+	{
+		display: none;
+	}
+
+	#algeria
+	{
+		display: none;
+	}
+
+	#france
+	{
+		width: 94%;
+		height: 15em;
+	}
+
+
+	#flags p
+	{
+		margin-top: 1em;
+	}
+
+	#premier
+	{
+		float: left;
+		width: 100%;
+		height: 16em;
+	}
+
+	#deuxieme
+	{
+		float: left;
+		width: 100%;
+		height: 16em;
+		margin-left: 0px;
+	}
+
+	#troisieme
+	{
+		float: left;
+		width: 100%;
+		height: 16em;
+		margin-left: 0px;
+	}
+
+	#premier div p
+	{
+		margin-top: 10px;
+		margin-right: 250px;
+		margin-left: 0px;
+		float: right;
+	}
+
+	#premier div img
+	{
+		float: left;
+	}
+
+	#troisieme div p
+	{
+		margin-top: 10px;
+		margin-right: 250px;
+		margin-left: 0px;
+		float: right;
+	}
+
+	#destination
+	{
+		margin-left: 5em;
+		float: left;
+		width: 83%;
+		margin-top: 430px;
+	}
+
+	#france img
+	{
+		margin-top: 0.4em;
+		margin-left: 0.4em;
+		width: 585px;
+		height: 230px;
+	}
+
+	#para
+	{
+		margin-left: 5em;
+		width: 80%;
+	}
+
+	#gauche
+	{
+		width: 100%;
+		height: 17em;
+	}
+
+	#droite
+	{
+		width: 100%;
+	}
+
+	#demifooter p
+	{
+		font-size: 1em;
+		line-height: 20px;
+	}
+
+	.lorem
+	{
+		width: 70%;
+		margin-top: 0.4em;
+		margin-left: 0.2em;
+	}
+
+	#clear
+	{
+		height: 15em;
+	}
+
+	#footermenu
+	{
+		margin-left: 5em;
+	}
+
+	#footermenu p
+	{
+		padding-right: 70px;
+	}
+
+	.classa
+	{
+		margin-left: 0px;
+	}
+
+	#last
+	{
+		margin-left: 7em;
+	}
+}
+
+/* tablette paysage ipad*/
+@media (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)
+{
+	#logo
+	{
+		margin-left: 5em;
+	}
+
+	#menu
+	{
+	    margin-top: 8em;
+	}
+
+	nav img
+	{
+		margin-left: 5em;
+	}
+
+	nav
+	{
+		height: 10em;
+	}
+
+	#navmenu
+	{
+		margin-left: -20em;
+	}
+
+	#slider
+	{
+		width: 82%;
+		height: 24em;
+	}
+
+	#desimg
+	{
+		display: none;
+	}
+
+	#cntslide
+	{
+		height: 24em;
+	}
+
+	#next
+	{
+		margin-top: 5em;
+	}
+
+	#prev
+	{
+		margin-top: 5em;
+	}
+
+	.nav
+	{
+		top: 21em;
+		left: 30%;
+		position: relative;
+	}
+
+	#textes
+	{
+		margin-left: 5em;
+		width: 83.5%;
+	}
+
+	#destination
+	{
+		margin-left: 5em;
+		width: 83.5%;
+	}
+
+	#france img
+	{
+		margin-top: 0.4em;
+		margin-left: 0.4em;
+		width: 254px;
+		height: 140px;
+	}
+
+	#brazil img
+	{
+		margin-top: 0.4em;
+		margin-left: 0.4em;
+		width: 254px;
+		height: 140px;
+	}
+
+	#algeria img
+	{
+		margin-top: 0.4em;
+		margin-left: 0.4em;
+		width: 254px;
+		height: 140px;
+	}
+
+	#para
+	{
+		margin-left: 5em;
+		width: 80%;
+	}
+
+	#gauche
+	{
+		width: 47%;
+	}
+
+	#troisieme div p
+	{
+		margin-right: 10px;
+	}
+
+	#droite
+	{
+		width: 48%;
+	}
+
+	.lorem
+	{
+		width: 70%;
+		margin-top: 0.4em;
+		margin-left: 0.2em;
+	}
+
+	#footermenu
+	{
+		margin-left: 5em;
+	}
+
+	#last
+	{
+		margin-left: 7em;
+	}
+}
